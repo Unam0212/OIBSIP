@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("TheWaterfront-scaled-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 0%;
+}
+.content {
+    width: 100%;
+    position: fixed;
+    top: 30%;
+    text-align: center;
+    color: #fff;
+}
+.content h1 {
+    font-size: 50px;
+}
+.content p {
+    font-size: 20px;
+}
+.banner {
+    margin: 90px auto 0;
+    text-align: center;
+}
+.banner a {
+    position: relative;
+    width: 150px;
+    margin: 0 10px;
+    color: #fff;
+    border: 2px solid #009688;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 15px 0;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+.banner a span {
+height: 100px;
+width: 0%;
+    transition: 0.5s;
+    background: #009688;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.banner a:hover span {
+    width: 100%;
+}
+.banner a:hover {
+    border: none;
+}
+.menu {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 30% 0;
+    position: fixed;
+    top: -60%;
+    display: inline-block;
+    right: -55%;
+    
+}
+.menu a {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu a::after {
+    content: '';
+    height: 5px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+}
+.menu a:hover {
+    border: 2px solid #009688;
+    border-radius: 25%;
+    padding: 0% 30;
+}
